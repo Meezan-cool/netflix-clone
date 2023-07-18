@@ -1,0 +1,117 @@
+.header {
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 70px;
+    z-index: 1;
+    transition: all 0.2s ease-in-out;
+}
+.header_black{
+    
+    background-color: rgba(0, 0, 0, .6);
+    backdrop-filter: blur(15px);
+}
+.header_logo{
+    width: 80px;
+    object-fit: contain;
+    padding: 20px;
+}
+.header_avatar{
+    width: 30px;
+    object-fit: contain;
+    padding-right: 20px;
+    cursor: pointer;
+}
+.header button{
+    background: none;
+    border: none;
+}
+
+.Sign_Up{
+    position: fixed;
+    background-color: rgba(0, 0, 0, .6);
+    backdrop-filter: blur(15px);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: aliceblue;
+    gap: 2rem;
+}
+.Xmarks{
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: aliceblue;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.Sign_Up form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+.Sign_Up form input{
+   padding: 10px 20px;
+   width: 45vh;
+   height: 6vh;
+   border: none;
+   border-radius: 5px;
+   background: aliceblue;
+   outline: none;
+   font-weight: 600;
+   font-size: 1rem;
+  
+}
+.Sign_Up form button{
+    padding: 10px;
+    width: 40vh;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: aliceblue;
+    font-weight: 800;
+    background: rgb(42, 42, 42);
+}
+.Sign_Up form button:hover{
+    background: aliceblue;
+    color: black;
+}
+.Sign_Up form input::placeholder{
+    transition: all .3s ;
+    color: rgb(1, 1, 1);
+    font-size: .8rem;
+    padding: 10px;
+    font-family: 'Orbitron';
+
+}
+.Sign_Up form input:hover::placeholder{
+    transform: translateY(-15px);
+    transition: ease-in-out .3s ;
+}
+
+@media (max-width:600px){
+    .Sign_Up form input{
+        width: 30vh;
+        height: 4vh;
+        font-weight: 500;
+        font-size: .7rem;
+    }
+    .Sign_Up form button{
+        padding: 7px;
+    width: 30vh;
+    font-size: .7rem;
+    font-weight: 500;
+    }
+    .Sign_Up form input::placeholder{
+        padding: 7px;
+        font-size: .6rem;
+    }
+}
